@@ -55,6 +55,9 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div class="card-footer d-flex justify-content-start">
+                            {{$users->links()}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,7 +168,8 @@
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
                         <i class="fa fa-times mr-1"></i>Cancel
                     </button>
-                    <button type="button" wire:click.prevent="deleteUser" class="btn btn-danger"><span class="fa fa-trash"></span> Delete User
+                    <button type="button" wire:click.prevent="deleteUser" class="btn btn-danger"><span
+                            class="fa fa-trash"></span> Delete User
                     </button>
                 </div>
             </div>
